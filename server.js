@@ -56,7 +56,9 @@ app.get('/instructions', (req, res) => {
 app.get('/updates', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'updates.html'));
 })
-
+app.get('/modlist', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'modlist.html'));
+})
 
 // =============================================================================
 // LISTENER
