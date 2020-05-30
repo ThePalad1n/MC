@@ -1,5 +1,5 @@
 {
-  "name": "MC",
+  "name": "valuecraft",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,19 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThePalad1n/MC.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ThePalad1n/MC/issues"
-  },
-  "homepage": "https://github.com/ThePalad1n/MC#readme",
   "dependencies": {
-    "bootstrap": "^3.4.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "nodemailer": "^6.4.6",
     "nodemailer-mailgun-transport": "^2.0.0"

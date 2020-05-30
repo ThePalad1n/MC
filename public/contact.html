@@ -15,11 +15,44 @@
 </head>
 
 <style>
-    body {
-        background-image: url('https://i.imgur.com/P73IqGp.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
+    .btn {
+        position: relative;
+        top: 50%;
+        left: 40%;
+
+        background-color: white;
+        float: center;
+        color: black;
+        border: 2px solid #555555;
+    }
+
+    .btn:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+    .btn2 {
+        background-color: white;
+        float: center;
+        color: black;
+        border: 2px solid #555555;
+    }
+
+    .btn2:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+    .btn3 {
+        background-color: white;
+        float: center;
+        color: black;
+        border: 2px solid #555555;
+    }
+
+    .btn3:hover {
+        background-color: #555555;
+        color: white;
     }
 </style>
 
@@ -31,7 +64,8 @@
                 <a href="/home">Home</a>
                 <a href="/contact">Contact</a>
                 <a href="/instructions">Instructions</a>
-                <a href="/resources" >Resources</a>
+                <a href="/modlist">Mod List</a>
+                <a href="/resources">Resources</a>
                 <a href="/updates">Updates</a>
             </nav>
         </div>
@@ -39,24 +73,29 @@
 
     <div id="maincontainer" class="container">
         <section class="mainsection">
-            <h1>CURRENTLY UNDER MAINTAINENCE</h1>
+            <h2>Message me here</h2>
             <form>
                 <label for="name">Subject</label>
-                <input type="text" id="subject" placeholder="subject"> <br>
+                <input type="text" id="subject" placeholder="subject of email"> <br>
                 <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="email"> <br>
+                <input type="email" id="email" placeholder="youremail@email.com"> <br>
                 <label for="message">Message</label>
                 <textarea name="text" id="text" cols="30" rows="10"></textarea> <br>
-                <button class="btn btn-grey btn-block" type="submit" id="submit">Submit</button>
-            </form>
-
+                <button class="btn btn" type="submit" id="submit">Submit</button>
             </form>
         </section>
+        <section class="sidebar">
+            <div id="connectme">
+                <h2>Quick Connect</h2>
+                <button class="btn2 btn2" onclick="serverDown()" type="submit" id="down"><img
+                        src="https://dino-chrome.com/static/images/dino.jpg" class="sociallinks" alt="Down"></button>
+                <button class="btn3 btn3" type="submit" id="disc"><a href="https://discord.gg/WC4wTXB">
+                        <img src="https://banner2.cleanpng.com/20180612/fyt/kisspng-computer-icons-discord-logo-judgment-apocalypse-s-discord-5b1fbec28d2869.7753029015288071065782.jpg"
+                            class="sociallinks" alt="Discord"></button>
+                </a>
+            </div>
+        </section>
     </div>
-
-
-
-
 
     <script>
         $('form').on('submit', (e) => {
@@ -77,11 +116,43 @@
             console.log(data);
 
             $.post('/email', data, function () {
-                console.log('Server recieved data')
+                console.log('Server recieved data');
+                window.location.reload();
             });
         });
-
     </script>
+
+    <script>
+            $("#down").click('submit',(e) => {
+                e.preventDefault();
+
+                const email = 'modpack2point0@gmail.com'
+                console.log(email);
+                const subject = 'Server Down'
+                console.log(subject);
+                const text = 'The server is down please reset ASAP'
+                console.log(text);
+
+                const data = {
+                    email,
+                    subject,
+                    text
+                };
+                console.log(data);
+
+                $.post('/email', data, function () {
+                    console.log('Server recieved data');
+                    window.location.reload();
+                });
+            });
+    </script>
+
+    <footer>
+        <div class="footer">
+            &copy; Copyright 2020 ThePalad1n
+        </div>
+    </footer>
+
 </body>
 
 </html>

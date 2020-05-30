@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8">
-        <base href="/">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-        <link rel="stylesheet" href="/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-        <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet1.css">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet1.css">
     <title>M0dPack 2.0 | ThePalad1n</title>
 </head>
-
-<style>
-    body {
-        background-image: url('https://i.imgur.com/P73IqGp.png');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-    }
-</style>
 
 <body>
     <header id="maintopheader">
@@ -31,7 +22,8 @@
                 <a href="/home">Home</a>
                 <a href="/contact">Contact</a>
                 <a href="/instructions">Instructions</a>
-                <a href="/resources" >Resources</a>
+                <a href="/modlist">Mod List</a>
+                <a href="/resources">Resources</a>
                 <a href="/updates">Updates</a>
             </nav>
         </div>
@@ -43,8 +35,8 @@
         <br>
         <div class="row">
             <div class="col-md-12">
-                <div style="background:skyblue !important" class="jumbotron text-center">
-                    <h1><span class="tabdisp"></span> Installation</h1>
+                <div style="background:none !important" class="jumbotron text-center">
+                    <h2><span class="tabdisp"></span> Installation</h2>
                     <dl>
                         <dt>1) Download Files</dt>
                         <dt>2) Install Forge</dt>
@@ -61,16 +53,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div style="background:skyblue !important" class="jumbotron text-center">
+                <div style="background:none !important" class="jumbotron text-center">
                     <h2><span class="tabdisp"></span> Download & Extract</h2>
                     <p>Before you continue down the page make sure that you have gone to the 'resources' page at the top
-                        right of the page and downloaded your forge and both mod packs. Put the downloads in an easily
-                        accessible place because you will be going to them several times.</p>
+                        right of the page and downloaded your forge and the mod pack. It will bring you to our google
+                        drive page just click the little download button on the top right of the page and save it in an
+                        easily accessible place because you will be going to them several times. After you download and
+                        save hit hit the back button and do the same for the mod pack. Then return here to continue.</p>
                     <br>
                     <p>Once you have downloaded them make sure you extract each of them in the same spot for easy
-                        access. Then make a NEW FOLDER called 'mods' no capitals. Next, combine the contents (the jar
-                        files and folders contained) of 'modspt1' and 'modspt2' in your mods folder and then proceed to
-                        the next step.</p>
+                        access.</p>
                 </div>
             </div>
         </div>
@@ -79,49 +71,71 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div style="background:skyblue !important" class="jumbotron text-center">
-                    <h2><span class="tabdisp"></span> Installing Forge</h2>
-                    <p>Select the folder labeled 'Forge'. Next you will want to double click and
-                        run the installation. Please choose the client option and click OK. Do not change the file path,
-                        it will default to the correct area.</p>
-                    <br>
+                <div style="background:none !important" class="jumbotron text-center">
+                    <h2><span class="tabdisp"></span> Installing Forge PC</h2>
+                    <p>Select the folder labeled 'Forge'. Next you will want to double click and run the installation.
+                        Please choose the client option and click OK. Do not change the file path, it will default to
+                        the correct area.</p>
                     <p>Next you will want to run Minecraft. Before you hit play go to the top of the screen under
-                        'Installations'. Click on the one labled 'Forge', go back to the 'Play' tab and hit PLAY at the
-                        bottom of the screen.</p>
-                    <br>
+                        'Installations'. Click on <strong>add new</strong>. Name it Forge, under version select the one
+                        labled <strong>release 1.14.4-forge1.14.4-28.2.11</strong>. Then click <strong>SAVE</strong>.
+                        Click on the one labled 'Forge', go back to the 'Play' tab and hit PLAY at the bottom of the
+                        screen.</p>
                     <p>If you are left at the main menu of Minecraft you're good to go and can move one to the next
-                        step. If not then contact me and we will walk through it</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div style="background:skyblue !important" class="jumbotron text-center">
-                    <h2><span class="tabdisp"></span> Adding Mods (PC)</h2>
-                    <p>Copy the 'mods' folder you created in the first step. Now hit the windows key and type %appdata%,
-                        then hit enter. There should be a folder called .minecraft. Go into that folder and paste your
-                        mods folder. It will ask if you want to overwrite, hit YES.</p>
-                    <br>
-                    <p>Now run Minecraft Forge like in the previous step and you should get to the main page but now in
-                        the bottom left-hand corner it should say '54 mods loaded'.</p>
-                    <br>
-                    <p>If you do not get a successful lauch contact me. Else, move on to next step </p>
+                        step. If not then contact me and we will walk through it.</p>
 
                     <div class="row">
                         <div class="col-md-12">
-                            <div style="background:skyblue !important" class="jumbotron text-center">
+                            <div style="background:none !important" class="jumbotron text-center">
+                                <h2><span class="tabdisp"></span> Installing Forge MAC</h2>
+                                <p><strong>Note: There is a known issue with inistiall install with MACs regarding an
+                                        'unidentified developer'</strong> If you experience this issue click 
+                                        <a href="/troubleshoot">here</a>
+                                </p>
+                                <p>Select the folder labeled 'Forge'. Next you will want to double click and run the
+                                    installation. Please choose the client option and click OK. Do not change the file
+                                    path, it will default to the correct area.</p>
+                                <p>Next you will want to run Minecraft. Before you hit play go to the top of the screen
+                                    under 'Launch Options'. Click on <strong>add new</strong>. Name it Forge, under
+                                    version select the one labled <strong>release 1.14.4-forge1.14.4-28.2.11</strong>.
+                                    Then click <strong>SAVE</strong>. Now go back to the news tab at the top, click the
+                                    little arrow next to the huge PLAY button and select Forge. Finally hit play.</p>
+                                <p>If you are left at the main menu of Minecraft you're good to go and can move one to
+                                    the next step. If not then contact me and we will walk through it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div style="background:none !important" class="jumbotron text-center">
+                    <h2><span class="tabdisp"></span> Adding Mods (PC)</h2>
+                    <p>Copy the 'mods' folder you extracted in the first step. Now hit the windows key and type
+                        %appdata%, then hit enter. There should be a folder called .minecraft. Go into that folder and
+                        paste your mods folder. It will ask if you want to overwrite, hit YES.</p>
+                    <p>Now run Minecraft Forge like in the previous step and you should get to the main page
+                        but now in the bottom left-hand corner it should say '54 mods loaded'.</p>
+                    <p>If you do not get a successful lauch contact me. Else, move on to next step. </p>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div style="background:none !important" class="jumbotron text-center">
                                 <h2><span class="tabdisp"></span> Adding Mods (MAC)</h2>
-                                <p>Copy the 'mods' folder you created in the first step. On mac open finder, hold down
-                                    ALT and click Go then Library in the top menu bar. Open the folder Application
-                                    Support and look for Minecraft.</p>
-                                <br>
-                                <p>Now run Minecraft Forge like in the previous step and you should get to the main page
-                                    but now in the bottom left-hand corner it should say '54 mods loaded'.</p>
-                                <br>
-                                <p>If you do not get a successful lauch contact me. Else, move on to next step </p>
+                                <p>Navigate to your extracted mods folder. Hold CTRL and click on the folder and select
+                                    copy. Now go to <strong>Go</strong> on the top right of your MAC. Now hold down ALT
+                                    and a secret option called <strong>Library</strong> should appear and click on it.
+                                    Now that you are in there navigate to the minecraft folder. Open the folder and now
+                                    CTRL click and paste your copied mods folder. If it asks if you would like to
+                                    overwrite the current one choose yes.</p>
+                                <p>Now run Minecraft (With the Forge profile selected), like in the previous step, and
+                                    you should get to the main page but now in the bottom left-hand corner it should say
+                                    '54' mods loaded'.</p>
+                                <p>If you do not get a successful lauch contact me. Else, move on to next step. </p>
                             </div>
                         </div>
                     </div>
@@ -134,12 +148,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div style="background:skyblue !important" class="jumbotron text-center">
+                <div style="background:none !important" class="jumbotron text-center">
                     <h2><span class="tabdisp"></span> Finding Server</h2>
-                    <p>Now that you have forge running with all the mods we want to connect to the server. So lauch
-                        forge, go to the multiplayer tab on the main menu. Select driect connect and enter: </p>
+                    <p>Now that you have forge running with all the mods we want to connect to the server. So launch
+                        Minecraft with forge, go to the multiplayer tab on the main menu. Select add server, make the
+                        server name "Valuecraft" and under server address enter: </p>
                     <p> 66.235.175.231:25565</p>
-                    <p>Then hit connect. You should now be in the world.</p>
+                    <p>Then hit done. A new world named Valuecraft should pop up wait until the green on the right hand
+                        side pops up. Now hover over the little picture and click the play button. You should now be in
+                        the world.</p>
                 </div>
             </div>
         </div>
@@ -148,9 +165,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div style="background:skyblue !important" class="jumbotron text-center">
+                <div style="background:none !important" class="jumbotron text-center">
                     <h2><span class="tabdisp"></span> Feed Back</h2>
-                    <p>Got any feed back or had any trouble in the installation? Make sure to send me a msg, via the
+                    <p>Got any feed back or had any trouble in the installation? Make sure to send me a message on the
                         contact page, regarding any trouble you experienced during this. Happy Crafting.</p>
                 </div>
             </div>
@@ -160,32 +177,25 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div style="background:skyblue !important" class="jumbotron text-center">
+                <div style="background:none !important" class="jumbotron text-center">
                     <h2><span class="tabdisp"></span> Mod Pack Updates</h2>
-                    <p>If a new patch is here and you need to add/delete mods make sure that you do the following:</p>
-                    <br>
-                    <P>First go to step one on the instructions and recreate the mods folder.</P>
-                    <p>"Step one:</p>
-                    <p>Before you continue down the page make sure that you have gone to the 'resources' page at the top
-                        right of the page and downloaded both mod packs. Put the downloads in an easily
-                        accessible place because you will be going to them several times.</p>
-                    <br>
-                    <p>Once you have downloaded them make sure you extract each of them in the same spot for easy
-                        access. Then make a NEW FOLDER called 'mods' no capitals. Next, combine the contents (the jar
-                        files and folders contained) of 'modspt1' and 'modspt2' in your mods folder and then proceed to
-                        the next step.</p>
+                    <p>If a new patch is here and you need to add/delete mods make sure that you do the
+                        following:</p>
+                    <p>Frist go to the 'resources' page at the top right of the page and download the "updatepack". The
+                        open the extracted folder open the readme.txt. See which mods are being added or deleted. Now go
+                        back to the extracted folder and copy the contents.</p>
                     <br>
                     <p>PC Users</p>
-                    <p>Copy the 'mods' folder you created in the first step. Now hit the windows key and type %appdata%,
-                        then hit enter. There should be a folder called .minecraft. Go into that folder and paste your
-                        mods folder. WHEN YOU PASTE THE NEW MODS FOLDER MAKE SURE ITS NAME IS IDENTICAL AND THAT YOU
-                        OVERWRITE THE CURRENT ONE.</p>
+                    <p>Now hit the windows key and type %appdata%, then hit enter. There should be a folder called
+                        .minecraft. Go into that folder and then go into the mods folder. If your readme.txt did not
+                        have any deletions then you are all set. If there were deletions make sure that you delete what
+                        is specified.</p>
                     <br>
                     <p>MAC users</p>
-                    <p>Copy the 'mods' folder you created in the first step. On mac open finder, hold down ALT and click
-                        Go then Library in the top menu bar. Open the folder Application Support and look for Minecraft.
-                        WHEN YOU PASTE THE NEW MODS FOLDER MAKE SURE ITS NAME IS IDENTICAL AND THAT YOU OVERWRITE THE
-                        CURRENT ONE</p>
+                    <p>On mac open finder, hold down ALT and click Go then Library in the top menu bar. Open the folder
+                        Application Support and look for Minecraft. Go into that folder and then go into the mods
+                        folder. If your readme.txt did not have any deletions then you are all set. If there were
+                        deletions make sure that you delete what is specified.</p>
                     <br>
                     <p>Now run Minecraft Forge like in the previous step and you should get to the main page but now in
                         the bottom left-hand corner it should say '54 mods loaded'.</p>

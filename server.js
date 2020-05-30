@@ -1,10 +1,11 @@
 // ==============================================================================
 // DEPENDENCIES
 // ==============================================================================
-
+require('dotenv').config();
 const express = require('express');
-const sendMail = require('./routes/mail.js');
+const sendMail = require('./routes/mail');
 const path = require('path');
+
 // ==============================================================================
 // EXPRESS CONFIGURATION
 // ==============================================================================
@@ -41,6 +42,9 @@ app.post('/email', (req, res) => {
 });
 
 //get
+app.get('/', function(req, res){
+  res.redirect('/home');
+});
 app.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
@@ -59,7 +63,9 @@ app.get('/updates', (req, res) => {
 app.get('/modlist', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'modlist.html'));
 })
-
+app.get('/troubleshoot', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'troubleshoot.html'));
+})
 // =============================================================================
 // LISTENER
 // =============================================================================
